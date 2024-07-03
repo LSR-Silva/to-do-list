@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
 </head>
 <body>
-  
+  <div id="app">
+    <header class="header">
+      <div class="container">
+        <div class="logo">ToDo List</div>
+        <div class="form">
+          <input type="text" id="description">
+          <button type="button">Adicionar</button>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h2 id="incomplete-tasks-title">
+        <span>Tarefas não realizadas</span>
+        <span class="mask-num"></span>
+      </h2>
+      <ul class="mask-list" id="incomplete-tasks"></ul>
+      <h2 id="completed-tasks-title">
+        <span>Tarefas realizadas</span>
+        <span class="mask-num"></span>
+      </h2>
+      <ul class="mask-list completed-list" id="completed-tasks"></ul>
+    </div>
+  </div>
 </body>
 </html>
